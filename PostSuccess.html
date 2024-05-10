@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostSuccess</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        body .container{
+            width: auto;
+            height: auto;
+            display: flex;
+        }
+        body .container .pictures{
+            width: 500px;
+            min-height: 500px;
+            max-height: 500px;
+            background-color: rgb(250, 250, 250);
+            border-radius: 10px;
+            box-shadow: 0 0 7px rgba(0,0,0, .2);
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+        body .container .pictures img{
+            width: 100%;
+            margin-bottom: 10px;
+            width: 96%;
+            height: 96%;
+        }
+    </style>
+</head>
+<body>
+    <form class="container">
+        <div class="pictures">
+            <img src="./images/ApartmentIMG/blueHouse.jpeg" alt="">
+            <img src="./images/ApartmentIMG/blueHouse.jpeg" alt="">
+        </div>
+        <div>
+            <div id="informations">
+                <h4>Description:</h4>
+                <textarea value="" name="_description" id="" cols="10" rows="8" class="details height-input" placeholder="Your description here..." ></textarea><br>
+                <!-- <input required type="tel" id="description" class="details height-input"><br> -->
+                <h4>Location:</h4>
+                <input value="" name="_location" type="text" id="location" class="details heightshortInput"><br>
+                <h4>Contacts:</h4>
+                <input value=""  name="_contacts" type="text" id="contact" class="details heightshortInput"><br>
+                
+                <h4>Amenities:</h4>
+                <div class="allAmenities">
+                    <label for="" class="amenities">Internet Access</label><br>
+                        <input  value="" id="IntFree" name="_internet_access" type="text">
+            </div><br>
+
+            <div class="allAmenities">
+                <div class="checkboxselect">
+                    <input id="bed" name="_furnitures" type="checkbox" value="Bed">
+                </div>
+            </div><br>
+
+                <div class="allAmenities">
+                    <label for="" class="amenities">Common Areas</label><br>
+                    <div class="checkboxselect">
+                        <input id="livingroom" name="_common_areas" type="checkbox" value="Living room">
+                        <label for="livingroom">Living room</label><br>
+                        <input id="kitchen" name="_common_areas" type="checkbox" value="Kitchen">
+                        <label for="kitchen">Kitchen</label><br>
+                        <input id="dining" name="_common_areas" type="checkbox" value="Dining area">
+                        <label for="dining">Dining area</label><br>
+                        <input id="garden" name="_common_areas" type="checkbox" value="Garden">
+                        <label for="garden">Garden</label><br>
+                    </div>
+                </div><br>
+
+                
+                <div class="allAmenities">
+                    <label for="" class="amenities">Utilities</label><br><br>
+                    <div class="checkboxselect">
+                        <label class="amenities" for="">Water</label><br>
+                        <input id="ownPay" name="_water" type="checkbox" value="Own pay for bill">
+                        <label for="ownPay">Own pay for bill</label><br>
+                        <input id="addtoRent" name="_water" type="checkbox" value="Added to rental fee">
+                        <label for="addtoRent">Added to rental fee</label><br>
+                        <input id="waterFree" name="_water" type="checkbox" value="Water pump (free)">
+                        <label for="waterFree">Water pump (free)</label><br><br>
+
+                        <label class="amenities" for="">Electricity</label><br>
+                        <input id="ownPayElec" name="_electricity" type="checkbox" value="Own pay for bill">
+                        <label for="ownPayElec">Own pay for bill</label><br>
+                        <input id="addtoRentElec" name="_electricity" type="checkbox" value="Added to rental fee">
+                        <label for="addtoRentElec">Added to rental fee</label><br>
+                        <input id="ownerPayElec" name="_electricity" type="checkbox" value="Owner pay for bill">
+                        <label for="ownerPayElec">Owner pay for bill</label><br>
+                    </div>
+                </div><br>
+
+                
+                <div class="allAmenities">
+                    <label for="" class="amenities">Laundry Facilities</label><br>
+                    <div class="checkboxselect">
+                        <input id="washing" name="_laundry" type="checkbox" value="Washing machine">
+                        <label for="washing">Washing machine</label><br>
+                        <input id="dryer" name="_laundry" type="checkbox" value="Dryer">
+                        <label for="dryer">Dryer</label><br>
+                        <input id="nonelaundry" name="_laundry" type="checkbox" value="None">
+                        <label for="nonelaundry">None</label><br>
+                    </div>
+                </div><br>
+
+                <div class="allAmenities">
+                    <label for="" class="amenities">Parking lot</label><br>
+                    <div class="checkboxselect">
+                        <input id="have" name="_parkinglot" type="checkbox" value="We Have">
+                        <label for="have">We Have</label><br>
+                        <input id="noneparking" name="_parkinglot" type="checkbox" value="None">
+                        <label for="noneparking">None</label><br>
+                    </div>
+                </div><br>
+
+                <div class="allAmenities">
+                    <label for="" class="amenities">Security</label><br>
+                    <div class="checkboxselect">
+                        <input id="cctv" name="_security" type="checkbox" value="CCTV">
+                        <label for="cctv">CCTV</label><br>
+                        <input id="owngate" name="_security" type="checkbox" value="Own gate">
+                        <label for="owngate">Own gate</label><br>
+                        <input id="secpersonnel" name="_security" type="checkbox" value="Security Personnel">
+                        <label for="secpersonnel">Security Personnel</label><br>
+                        <input id="secnone" name="_security" type="checkbox" value="None">
+                        <label for="secnone">None</label><br>
+                    </div>
+                </div><br>
+              
+
+                <!-- <textarea name="" id="" cols="" rows="5" class="details height-input"></textarea><br> -->
+
+                <h4>Rules and Regulations:</h4>
+                <label for="amenities">Add the rules and regulations implemented on your apartment.</label>
+                <textarea name="_rules" id="" cols="" rows="10" placeholder="Please input your rules and regulations..." class="details height-input"></textarea><br>
+                    
+                <label class="label2bold" for="rentalFee">Rental Fee | Monthly: </label>
+                <input required type="number" name="_rental_fee" id="rentalFee" class="details">
+                
+                <label class="label2bold" for="payment">Mode of payment</label>
+                <select required name="_payment" id="payment" class=" details selection">
+                    <option value="g-cash">G-cash</option>
+                    <option value="">Cash</option>
+                </select>   
+
+        </div>
+
+        <img src="" alt="">
+        <h6>Amenities</h6>
+        <p></p>
+        <h6>Description</h6>
+        <p></p>
+        <h6>Location</h6>
+        <p></p>
+        <h6>Contacts</h6>
+        <p></p>
+        <h6>Internet Access</h6>
+        <p></p>
+        <h6>Furnitures</h6>
+        <p></p>
+        <h6>Common Ares</h6>
+        <p></p>
+        <h6>water</h6>
+        <p></p>
+        <h6>electricity</h6>
+        <p></p>
+        <h6>Laundry</h6>
+        <p></p>
+        <h6>Parking lot</h6>
+        <p></p>
+        <h6>Security</h6>
+        <p></p>
+        <h6>Rules</h6>
+        <p></p>
+        <h6>Rental Fee</h6>
+        <p></p>
+        <h6>Payment</h6>
+        <p></p>
+
+
+
+    </form>
+</body>
+</html>
